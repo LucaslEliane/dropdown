@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Dropdown Box test</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="center">
+        <div class="inner-center">
+          <input type="text" class="input-box"/>
+          <div class="dropdown">
+          </div>
+        </div>
+      </div>
+      <div class="left">
+
+      </div>
+      <div class="right">
+
+      </div>
+    </header>
+    <script src="./index.js"></script>
+    <script>
+      var $dropdown = new $Dropdown('.input-box', '.dropdown');
+      $dropdown.init([
+        "aaaa",
+        "aaav",
+        "aaac"
+      ]);
+    </script>
+  </body>
+</html>

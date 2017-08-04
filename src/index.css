@@ -1,0 +1,90 @@
+html, body {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  min-width: 50rem;
+}
+
+header {
+  height: 40rem;
+  width: 100%;
+}
+
+header > .center {
+  height: 40rem;
+  width: 100%;
+  background: lightcyan;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 20rem;
+  overflow: hidden;
+}
+
+.inner-center {
+  float: left;
+  position: relative;
+  left: 50%;
+} 
+
+.inner-center > input {
+  position: relative;
+  right: 50%;
+  width: 30rem;
+  font-size: 2.5rem;
+  height: 3rem;
+  padding-left: 1rem;
+  outline: none;
+  border: 1px solid rgba(100, 100, 100, 0.8);
+}
+
+.inner-center > input:focus {
+  border: 1px solid blue;
+  box-shadow: none;
+}
+
+.inner-center > .dropdown {
+  display: none;
+  position: relative;
+  right: 50%;
+  width: 31.2rem;
+  background: white;
+}
+
+.inner-center > .dropdown.show {
+  display: block;
+}
+
+.inner-center > .dropdown > ul {
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(233, 233, 233, 0.7);
+}
+
+.inner-center > .dropdown > ul > li {
+  list-style: none;
+  margin: 0;
+  height: 2.5rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  line-height: 2.5rem;
+}
+
+.inner-center > .dropdown > ul > li:hover {
+  background: rgba(150, 150, 150, 0.2);
+}
+
+header > .left,
+header > .right {
+  height: 20rem;
+  width: 20rem;
+  float: left;
+  background: lightcoral;
+}
+
+header > .left {
+  margin-left: -100%;
+}
+
+header > .right {
+  margin-left: -20rem;
+}
